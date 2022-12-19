@@ -1,0 +1,19 @@
+name: Ansible Lint
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: actions/checkout
+        uses: actions/checkout@v3
+      - name: actions/setup-python
+        uses: actions/setup-python@v1
+      - name: BSFishy/pip-action
+        uses: BSFishy/pip-action@v1
+        with:
+          packages: |
+            ansible==6.4.0
+            jinja2>=3.0.0
+            ansible-lint
+      - run: "ansible-lint -v --force-color"
+        working-directory: ${{ github.workspace }}

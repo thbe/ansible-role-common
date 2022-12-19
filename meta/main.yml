@@ -1,0 +1,19 @@
+---
+dependencies: []
+
+galaxy_info:
+  role_name: common
+  namespace: thbe
+  author: Thomas Bendler
+  description: This role provides common tasks required by all other roles
+  license: GPL-3.0-only
+  min_ansible_version: "2.9"
+  platforms:
+    - name: EL
+      versions:
+        - "8"
+        - "9"
+  galaxy_tags:
+    - common
+    - tools
+    - rhel

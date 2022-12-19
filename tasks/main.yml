@@ -1,0 +1,9 @@
+---
+# tasks file for common
+- name: Create common folder structure
+  ansible.builtin.import_tasks: folder.yml
+
+- name: Create common meta information
+  ansible.builtin.import_tasks: meta.yml
+  when:
+    - meta_information

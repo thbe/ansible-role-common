@@ -1,0 +1,22 @@
+---
+- name: Create Common meta directory
+  ansible.builtin.file:
+    path: "{{ role_directory }}/meta"
+    state: directory
+    owner: root
+    group: root
+    mode: 0755
+
+- name: Common role meta information
+  ansible.builtin.blockinfile:
+    backup: false
+    path: "{{ role_directory }}/meta/main.txt"
+    block: |
+      ### DevOps information ###
+      Responsible: {{ meta_responsible }}
+      Version:     {{ meta_version }}
+      Date:        {{ meta_date }}
+      Origin:      {{ meta_origin }}
+    owner: root
+    group: root
+    mode: 0644

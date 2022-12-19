@@ -1,0 +1,9 @@
+---
+# defaults file for common
+role_directory: /opt/ansible
+
+meta_information: false
+meta_responsible: 'unset'
+meta_version: 'unset'
+meta_date: 'unset'
+meta_origin: 'https://github.com/thbe'

@@ -1,0 +1,8 @@
+---
+- name: Create common directory for Ansible thbe roles
+  ansible.builtin.file:
+    path: "{{ role_directory }}"
+    state: directory
+    owner: root
+    group: root
+    mode: 0755
