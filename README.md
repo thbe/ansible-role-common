@@ -6,7 +6,7 @@ This role creates a common directory structure that is used by all other roles f
 Requirements
 ------------
 
-This role does not have any requirements but is required by other roles from "thbe" Ansible Galaxy namespace.
+This role does not have any requirements.
 
 Role Variables
 --------------
@@ -21,12 +21,12 @@ Role Variables
 Dependencies
 ------------
 
-This role does not have any dependencies.
+This role does not have any dependencies but is a dependency for other roles from "thbe" Ansible Galaxy namespace.
 
 Example Playbook
 ----------------
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
+This role can be included in the site.yml like this:
 
 ```yaml
 # Site playbook
