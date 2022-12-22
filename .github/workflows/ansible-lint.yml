@@ -1,14 +1,22 @@
 name: Ansible Lint
-on: [push, pull_request]
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
 jobs:
-  build:
+  lint:
     runs-on: ubuntu-latest
     steps:
-      - name: actions/checkout
+      - name: Checkout
         uses: actions/checkout@v3
-      - name: actions/setup-python
+      - name: Setup Python
         uses: actions/setup-python@v1
-      - name: BSFishy/pip-action
+      - name: Install with pip
         uses: BSFishy/pip-action@v1
         with:
           packages: |

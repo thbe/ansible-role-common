@@ -1,5 +1,4 @@
 ---
-# defaults file for common
 role_directory: /opt/ansible
 
 meta_information: false

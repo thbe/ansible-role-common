@@ -4,8 +4,12 @@
         "blockinfile",
         "boto",
         "CEST",
+        "github",
+        "gofrolist",
         "hostvars",
+        "jinja",
         "metafile",
+        "rockylinux",
         "rolename",
         "thbe"
     ]
