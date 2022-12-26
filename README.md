@@ -1,17 +1,14 @@
-Ansible Role thbe-common
-========================
+# Ansible Role thbe-common
 
 [![CI](https://github.com/thbe/ansible-role-common/actions/workflows/github-actions-ansible-lint.yml/badge.svg?event=push)](https://github.com/thbe/ansible-role-common/actions)
 
 This role creates a common directory structure that is used by all other roles from "thbe" Ansible Galaxy namespace.
 
-Requirements
-------------
+## Requirements
 
 This role does not have any requirements.
 
-Role Variables
---------------
+## Role Variables
 
 * **role_directory** - This variable contains the root path of the directories used by thbe roles (**do not change!**)
 * **meta_information** - Create a metafile with implementation-specific details (default: false)
@@ -20,13 +17,11 @@ Role Variables
 * **meta_date** - Date when Ansible code was released (default: 'unset')
 * **meta_origin** - URL of git repository hosting the Ansible source code (default: 'https://github.com/thbe')
 
-Dependencies
-------------
+## Dependencies
 
 This role does not have any dependencies but is a dependency for other roles from "thbe" Ansible Galaxy namespace.
 
-Example Playbook
-----------------
+## Example Playbook
 
 This role can be included in the site.yml like this:
 
@@ -41,12 +36,10 @@ This role can be included in the site.yml like this:
         name: thbe.common
 ```
 
-License
--------
+## License
 
 GPL-3.0-only
 
-Author Information
-------------------
+## Author Information
 
 Thomas Bendler - [https://www.thbe.org/](https://www.thbe.org/)
