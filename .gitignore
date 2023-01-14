@@ -1,0 +1,87 @@
+### Development ###
+
+# Eclipse
+/.project
+/.settings
+/.buildpath
+
+# Sublime
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+.*.sw[a-z]
+*.un~i
+tags
+
+# WebIDE
+UIAdaptation_index.html
+changes_preview.js
+sap-ui-cachebuster-info.json
+extended_runnable_file.html
+.*/extended_runnable_file.html
+mock_preview_sapui5.html
+.*/mock_preview_sapui5.html
+fioriHtmlRunner.html
+.*/fioriHtmlRunner.html
+visual_ext_index.html
+/webapp/visual_ext_index.html
+
+# Vagrant
+.vagrant/
+
+### Operating System ###
+
+# Windows
+Thumbs.db
+
+# OsX
+.DS_Store
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+
+### Application ###
+
+# Ansible
+inventories/
+roles/
+!inventories/.gitkeep
+!roles/.gitignore
+!roles/requirements.yml
+!roles/locally-versioned-role*/
+
+# nodejs npm modules
+/node_modules
+
+# node-cluster
+/pids
+*.sock
+
+# Kodi
+cache/
+kodi-content.html
+videodb.xml
+
+# rpmbuild
+BUILD/
+BUILDROOT/
+RPMS/noarch/*.rpm
+RPMS/x86_64/*.rpm
+SRPMS/*.src.rpm
+SOURCES/*.tar.gz
+tmp/
+
+# Jekyll
+_build_vault.yml
+_site/
+_site_qa/
+_site_production/
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+.tweet-cache
+.tweetsert-cache
+assets/files/e*
+static/files/e*
