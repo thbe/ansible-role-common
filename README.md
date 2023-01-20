@@ -1,6 +1,6 @@
 # Ansible Role thbe-common
 
-[![CI](https://github.com/thbe/ansible-role-common/actions/workflows/github-actions-ansible-lint.yml/badge.svg?event=push)](https://github.com/thbe/ansible-role-common/actions)
+[![Ansible Lint](https://github.com/thbe/ansible-role-common/actions/workflows/ansible-lint.yml/badge.svg)](https://github.com/thbe/ansible-role-common/actions/workflows/ansible-lint.yml)[![Molecule](https://github.com/thbe/ansible-role-common/actions/workflows/molecule.yml/badge.svg)](https://github.com/thbe/ansible-role-common/actions/workflows/molecule.yml)
 
 This role creates a common directory structure that is used by all other roles from "thbe" Ansible Galaxy namespace.
 
