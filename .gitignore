@@ -30,6 +30,9 @@ visual_ext_index.html
 # Vagrant
 .vagrant/
 
+# Generic
+/TODO
+
 ### Operating System ###
 
 # Windows
