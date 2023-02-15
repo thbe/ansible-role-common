@@ -32,6 +32,7 @@ visual_ext_index.html
 
 # Generic
 /TODO
+/TODO.md
 
 ### Operating System ###
 
@@ -88,3 +89,4 @@ _site_production/
 .tweetsert-cache
 assets/files/e*
 static/files/e*
+Gemfile.lock
