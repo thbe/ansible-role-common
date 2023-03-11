@@ -7,11 +7,11 @@ dependency:
 driver:
   name: docker
 platforms:
-  - name: RockyLinux_8
-    image: rockylinux:8
+  - name: Redhat-8
+    image: registry.access.redhat.com/ubi8/ubi-init
     pre_build_image: true
-  - name: RockyLinux_9
-    image: rockylinux:9
+  - name: Redhat-9
+    image: registry.access.redhat.com/ubi9/ubi-init
     pre_build_image: true
 provisioner:
   name: ansible
@@ -19,5 +19,5 @@ verifier:
   name: ansible
 lint: |
   set -e
-  yamllint .
-  ansible-lint .
+  yamllint --list-files .
+  ansible-lint -v --force-color .
