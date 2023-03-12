@@ -12,6 +12,7 @@
         "metafile",
         "rockylinux",
         "rolename",
-        "thbe"
+        "thbe",
+        "tmpfs"
     ]
 }
