@@ -5,6 +5,8 @@
         "blockinfile",
         "boto",
         "CEST",
+        "cgroupns",
+        "containerd",
         "github",
         "gofrolist",
         "hostvars",
