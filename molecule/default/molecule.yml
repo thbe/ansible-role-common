@@ -16,10 +16,9 @@ platforms:
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
     capabilities:
       - SYS_ADMIN
-    command: "/usr/sbin/init"
     pre_build_image: true
   - name: AlmaLinux-8
-    image: docker.io/almalinux:8
+    image: docker.io/almalinux/8-init
     tmpfs:
       - /run
       - /tmp
@@ -27,10 +26,9 @@ platforms:
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
     capabilities:
       - SYS_ADMIN
-    command: "/usr/sbin/init"
     pre_build_image: true
   - name: AlmaLinux-9
-    image: docker.io/almalinux:9
+    image: docker.io/almalinux/9-init
     tmpfs:
       - /run
       - /tmp
@@ -38,7 +36,6 @@ platforms:
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
     capabilities:
       - SYS_ADMIN
-    command: "/usr/sbin/init"
     pre_build_image: true
 provisioner:
   name: ansible
