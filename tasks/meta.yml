@@ -7,6 +7,20 @@
     group: root
     mode: 0755
 
+- name: Check if meta file exists
+  ansible.builtin.stat: 
+    path: "{{ role_directory }}/meta/main.txt"
+  register: meta_file
+
+- name: Create meta file if not exists
+  ansible.builtin.file:
+    path: "{{ role_directory }}/meta/main.txt"
+    state: touch 
+    owner: root
+    group: root
+    mode: 0644
+  when: meta_file.stat.exists is defined and not meta_file.stat.exists
+
 - name: Common role meta information
   ansible.builtin.blockinfile:
     backup: false
