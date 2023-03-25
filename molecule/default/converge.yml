@@ -5,3 +5,9 @@
     - name: "Include thbe.common"
       ansible.builtin.include_role:
         name: "thbe.common"
+      vars:
+        meta_information: true
+        meta_responsible: 'John Doe'
+        meta_version: 'v1.0.0'
+        meta_date: 'Sat Mar 25 17:53:29 UTC 2023'
+        meta_origin: 'https://github.com/xxx/yyy'
