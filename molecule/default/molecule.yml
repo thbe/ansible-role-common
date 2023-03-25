@@ -31,5 +31,5 @@ verifier:
   name: ansible
 lint: |
   set -e
-  yamllint --list-files .
-  ansible-lint -v --force-color .
+  yamllint -s -f auto --list-files .
+  ansible-lint -v --force-color --profile production
