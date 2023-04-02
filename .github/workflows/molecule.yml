@@ -13,6 +13,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3.3.0
+        uses: actions/checkout@v3.5.0
       - name: Ansible Molecule
-        uses: gofrolist/molecule-action@v2.3.11
+        uses: gofrolist/molecule-action@v2.3.17
+        with:
+          molecule_options: --debug
+          molecule_command: test
+        env:
+          ANSIBLE_FORCE_COLOR: '1'
