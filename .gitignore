@@ -1,5 +1,4 @@
 ### Development ###
-
 # Eclipse
 /.project
 /.settings
@@ -27,15 +26,7 @@ fioriHtmlRunner.html
 visual_ext_index.html
 /webapp/visual_ext_index.html
 
-# Vagrant
-.vagrant/
-
-# Generic
-/TODO
-/TODO.md
-
 ### Operating System ###
-
 # Windows
 Thumbs.db
 
@@ -47,7 +38,6 @@ Icon?
 .Trashes
 
 ### Application ###
-
 # Ansible
 inventories/
 roles/
@@ -90,3 +80,10 @@ _site_production/
 assets/files/e*
 static/files/e*
 Gemfile.lock
+
+# Vagrant
+.vagrant/
+
+# Generic
+/TODO
+/TODO.md
