@@ -11,11 +11,18 @@ galaxy_info:
   platforms:
     - name: EL
       versions:
-        - "8"
         - "9"
+    - name: Debian
+      versions:
+        - "bookworm"
+    - name: Ubuntu
+      versions:
+        - "noble"
   galaxy_tags:
     - common
     - tools
     - rhel
     - rockylinux
     - almalinux
+    - debian
+    - ubuntu
