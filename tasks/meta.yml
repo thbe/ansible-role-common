@@ -5,7 +5,7 @@
     state: directory
     owner: root
     group: root
-    mode: 0755
+    mode: "0755"
 
 - name: Check if meta file exists
   ansible.builtin.stat: 
@@ -18,7 +18,7 @@
     state: touch 
     owner: root
     group: root
-    mode: 0644
+    mode: "0644"
   when: meta_file.stat.exists is defined and not meta_file.stat.exists
 
 - name: Common role meta information
@@ -33,4 +33,4 @@
       Origin:      {{ meta_origin }}
     owner: root
     group: root
-    mode: 0644
+    mode: "0644"
